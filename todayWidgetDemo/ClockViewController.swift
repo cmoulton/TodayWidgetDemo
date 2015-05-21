@@ -37,7 +37,6 @@ class ClockViewController: UIViewController {
   }
   
   func updateTimeLabel(timer: NSTimer!) {
-    println("tick")
     if let label = timeLabel {
       // get the current time
       let now = NSDate.new()
