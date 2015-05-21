@@ -10,6 +10,7 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
+  @IBOutlet var widgetTimeLabel: UILabel?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -29,6 +30,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     // If an error is encountered, use NCUpdateResult.Failed
     // If there's no update required, use NCUpdateResult.NoData
     // If there's an update, use NCUpdateResult.NewData
+
+    widgetTimeLabel?.text = "Still not sure"
+    if let label = widgetTimeLabel
+    {
+      let defaults = NSUserDefaults(suiteName: "com.teakmobile.grokswift.todayWidget")
+      if let timeString:String = defaults?.objectForKey("timeString") as? String
+      {
+        widgetTimeLabel?.text = timeString
+      }
+    }
     
     completionHandler(NCUpdateResult.NewData)
   }
