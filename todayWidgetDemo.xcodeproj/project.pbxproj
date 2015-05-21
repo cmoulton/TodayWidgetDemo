@@ -13,6 +13,10 @@
 		CF4971381B0E6EBD00E085D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4971371B0E6EBD00E085D8 /* Images.xcassets */; };
 		CF49713B1B0E6EBD00E085D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4971391B0E6EBD00E085D8 /* LaunchScreen.xib */; };
 		CF4971471B0E6EBD00E085D8 /* todayWidgetDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4971461B0E6EBD00E085D8 /* todayWidgetDemoTests.swift */; };
+		CF4971571B0E74C100E085D8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4971561B0E74C100E085D8 /* NotificationCenter.framework */; };
+		CF49715C1B0E74C100E085D8 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49715B1B0E74C100E085D8 /* TodayViewController.swift */; };
+		CF49715E1B0E74C100E085D8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF49715D1B0E74C100E085D8 /* MainInterface.storyboard */; };
+		CF4971611B0E74C100E085D8 /* todayClockWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF4971541B0E74C100E085D8 /* todayClockWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +27,28 @@
 			remoteGlobalIDString = CF49712A1B0E6EBD00E085D8;
 			remoteInfo = todayWidgetDemo;
 		};
+		CF49715F1B0E74C100E085D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4971231B0E6EBD00E085D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4971531B0E74C100E085D8;
+			remoteInfo = todayClockWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF4971651B0E74C100E085D8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF4971611B0E74C100E085D8 /* todayClockWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CF49712B1B0E6EBD00E085D8 /* todayWidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todayWidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +61,11 @@
 		CF4971401B0E6EBD00E085D8 /* todayWidgetDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todayWidgetDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4971451B0E6EBD00E085D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF4971461B0E6EBD00E085D8 /* todayWidgetDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayWidgetDemoTests.swift; sourceTree = "<group>"; };
+		CF4971541B0E74C100E085D8 /* todayClockWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = todayClockWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4971561B0E74C100E085D8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CF49715A1B0E74C100E085D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF49715B1B0E74C100E085D8 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		CF49715D1B0E74C100E085D8 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +83,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF4971511B0E74C100E085D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4971571B0E74C100E085D8 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +99,8 @@
 			children = (
 				CF49712D1B0E6EBD00E085D8 /* todayWidgetDemo */,
 				CF4971431B0E6EBD00E085D8 /* todayWidgetDemoTests */,
+				CF4971581B0E74C100E085D8 /* todayClockWidget */,
+				CF4971551B0E74C100E085D8 /* Frameworks */,
 				CF49712C1B0E6EBD00E085D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +110,7 @@
 			children = (
 				CF49712B1B0E6EBD00E085D8 /* todayWidgetDemo.app */,
 				CF4971401B0E6EBD00E085D8 /* todayWidgetDemoTests.xctest */,
+				CF4971541B0E74C100E085D8 /* todayClockWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +153,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CF4971551B0E74C100E085D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF4971561B0E74C100E085D8 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF4971581B0E74C100E085D8 /* todayClockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CF49715B1B0E74C100E085D8 /* TodayViewController.swift */,
+				CF49715D1B0E74C100E085D8 /* MainInterface.storyboard */,
+				CF4971591B0E74C100E085D8 /* Supporting Files */,
+			);
+			path = todayClockWidget;
+			sourceTree = "<group>";
+		};
+		CF4971591B0E74C100E085D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF49715A1B0E74C100E085D8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +189,12 @@
 				CF4971271B0E6EBD00E085D8 /* Sources */,
 				CF4971281B0E6EBD00E085D8 /* Frameworks */,
 				CF4971291B0E6EBD00E085D8 /* Resources */,
+				CF4971651B0E74C100E085D8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF4971601B0E74C100E085D8 /* PBXTargetDependency */,
 			);
 			name = todayWidgetDemo;
 			productName = todayWidgetDemo;
@@ -150,6 +219,23 @@
 			productReference = CF4971401B0E6EBD00E085D8 /* todayWidgetDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CF4971531B0E74C100E085D8 /* todayClockWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4971621B0E74C100E085D8 /* Build configuration list for PBXNativeTarget "todayClockWidget" */;
+			buildPhases = (
+				CF4971501B0E74C100E085D8 /* Sources */,
+				CF4971511B0E74C100E085D8 /* Frameworks */,
+				CF4971521B0E74C100E085D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = todayClockWidget;
+			productName = todayClockWidget;
+			productReference = CF4971541B0E74C100E085D8 /* todayClockWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +251,9 @@
 					CF49713F1B0E6EBD00E085D8 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = CF49712A1B0E6EBD00E085D8;
+					};
+					CF4971531B0E74C100E085D8 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -183,6 +272,7 @@
 			targets = (
 				CF49712A1B0E6EBD00E085D8 /* todayWidgetDemo */,
 				CF49713F1B0E6EBD00E085D8 /* todayWidgetDemoTests */,
+				CF4971531B0E74C100E085D8 /* todayClockWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +292,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4971521B0E74C100E085D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF49715E1B0E74C100E085D8 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +323,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF4971501B0E74C100E085D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF49715C1B0E74C100E085D8 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +338,11 @@
 			isa = PBXTargetDependency;
 			target = CF49712A1B0E6EBD00E085D8 /* todayWidgetDemo */;
 			targetProxy = CF4971411B0E6EBD00E085D8 /* PBXContainerItemProxy */;
+		};
+		CF4971601B0E74C100E085D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4971531B0E74C100E085D8 /* todayClockWidget */;
+			targetProxy = CF49715F1B0E74C100E085D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -392,6 +503,30 @@
 			};
 			name = Release;
 		};
+		CF4971631B0E74C100E085D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = todayClockWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF4971641B0E74C100E085D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = todayClockWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +552,14 @@
 			buildConfigurations = (
 				CF49714E1B0E6EBD00E085D8 /* Debug */,
 				CF49714F1B0E6EBD00E085D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF4971621B0E74C100E085D8 /* Build configuration list for PBXNativeTarget "todayClockWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4971631B0E74C100E085D8 /* Debug */,
+				CF4971641B0E74C100E085D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
