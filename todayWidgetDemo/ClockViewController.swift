@@ -43,7 +43,7 @@ class ClockViewController: UIViewController {
       // convert time to a string for display
       let dateString = dateFormatter.stringFromDate(now)
       label.text = dateString
-      let defaults = NSUserDefaults(suiteName: "com.teakmobile.grokswift.todayWidget")
+      let defaults = NSUserDefaults(suiteName: "group.teakmobile.grokswift.todayWidget")
       defaults?.setObject(dateString, forKey: "timeString")
     }
   }

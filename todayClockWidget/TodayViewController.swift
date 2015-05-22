@@ -34,10 +34,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     widgetTimeLabel?.text = "Still not sure"
     if let label = widgetTimeLabel
     {
-      let defaults = NSUserDefaults(suiteName: "com.teakmobile.grokswift.todayWidget")
+      let defaults = NSUserDefaults(suiteName: "group.teakmobile.grokswift.todayWidget")
       if let timeString:String = defaults?.objectForKey("timeString") as? String
       {
-        widgetTimeLabel?.text = timeString
+        widgetTimeLabel?.text = "You last ran the main app at: " + timeString
       }
     }
     
