@@ -20,8 +20,8 @@ class ClockViewController: UIViewController {
     super.viewDidLoad()
     
     // set up date formatter since it's expensive to keep creating them
-    self.dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
-    self.dateFormatter.timeStyle = NSDateFormatterStyle.FullStyle
+    self.dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
+    self.dateFormatter.timeStyle = NSDateFormatterStyle.LongStyle
     
     // create and add label to display time
     timeLabel = UILabel(frame: self.view.frame)
