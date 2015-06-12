@@ -578,6 +578,7 @@
 				CF49714C1B0E6EBD00E085D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF49714D1B0E6EBD00E085D8 /* Build configuration list for PBXNativeTarget "todayWidgetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +587,7 @@
 				CF49714F1B0E6EBD00E085D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF4971621B0E74C100E085D8 /* Build configuration list for PBXNativeTarget "todayClockWidget" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +596,7 @@
 				CF4971641B0E74C100E085D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
