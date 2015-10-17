@@ -39,7 +39,7 @@ class ClockViewController: UIViewController {
   func updateTimeLabel(timer: NSTimer!) {
     if let label = timeLabel {
       // get the current time
-      let now = NSDate.new()
+      let now = NSDate()
       // convert time to a string for display
       let dateString = dateFormatter.stringFromDate(now)
       label.text = dateString
